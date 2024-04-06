@@ -10,6 +10,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/cup-fill.svg"
+      type="image/x-icon"
+    />
     <title>Café Delicia, Venha Se Deliciar!</title>
   </head>
 
@@ -18,9 +23,9 @@
       <header></header>
       <div class="home">
         <h1>Bem vindo(a) ao Café Delícia!!</h1>
-          <img src="./assets/images/café delicia.png" alt="">
+        <img src="./assets/images/café delicia.png" alt="" />
         <h2>Venha se deliciar com as nossas delícias!</h2>
-        <p class="main-p">
+        <p class="home-p">
           Cada prato é constituído de 50% de ingredientes de qualidade e 50% de
           preparos feitos com todo o cuidado.
         </p>
@@ -29,34 +34,70 @@
         <ol>
           <li>
             <h2>Cafés & Chás</h2>
-            <ul>
+            <ul class="coffee-items">
               <li>
-                <h3>Café Preto</h3>
+                <div class="coffee-title">
+                  <img
+                    src="./assets/images/black-coffee.jpg"
+                    alt="Imagem de Café Preto"
+                  />
+                  <h3>Café Preto</h3>
+                </div>
                 <p>Xícara (150ml) de Café Preto de tipo arábica.</p>
                 <span>R$ 6.50</span>
               </li>
               <li>
-                <h3>Capuccino</h3>
+                <div class="coffee-title">
+                  <img
+                    src="./assets/images/capuccino.jpg"
+                    alt="Imagem de Capuccino"
+                  />
+                  <h3>Capuccino</h3>
+                </div>
                 <p>Xícara (150ml) de Capuccino cremoso.</p>
                 <span>R$ 9,00</span>
               </li>
               <li>
-                <h3>Mocaccino Canela</h3>
+                <div class="coffee-title">
+                  <img
+                    src="./assets/images/mocaccino.jpg"
+                    alt="Imagem de Mocaccino Canela"
+                  />
+                  <h3>Mocaccino Canela</h3>
+                </div>
                 <p>200Ml de Mocaccino cremoso coberto por canela.</p>
                 <span>R$ 10.00</span>
               </li>
               <li>
-                <h3>Chocolate Quente</h3>
+                <div class="coffee-title">
+                  <img
+                    src="./assets/images/chocolate.jpg"
+                    alt="Imagem de Chocolate-Quente"
+                  />
+                  <h3>Chocolate-Quente</h3>
+                </div>
                 <p>200Ml de chocolate quente cremoso com chantilly.</p>
                 <span>R$ 10,00</span>
               </li>
               <li>
-                <h3>Chai Tea Latte</h3>
+                <div class="coffee-title">
+                  <img
+                    src="./assets/images/chaitea.jpg"
+                    alt="Imagem de Chai Tea"
+                  />
+                  <h3>Chai Tea</h3>
+                </div>
                 <p>200Ml de um delicioso chá de especiarias.</p>
                 <span>R$ 12,90</span>
               </li>
               <li>
-                <h3>Frapuccino</h3>
+                <div class="coffee-title">
+                  <img
+                    src="./assets/images/coffee.jpg"
+                    alt="Imagem de Frapuccino"
+                  />
+                  <h3>Frapuccino</h3>
+                </div>
                 <p>500Ml de café batido com sorvete de creme e chantilly.</p>
                 <span>R$ 16,50</span>
               </li>
@@ -64,62 +105,132 @@
           </li>
           <li>
             <h2>Sanduíches & Salgados</h2>
-            <ul>
+            <ul class="food-items">
               <li>
-                <h3>Baguete de Frango com Requeijão.</h3>
-                <span
-                  >Deliciosa baguete de 15cm recheada com<br />frango e
-                  requeijão.</span
-                >
-                <p>R$ 13,00</p>
+                <div class="sandwich-title">
+                  <img
+                    src="./assets/images/baguete-frango.png"
+                    alt="Baguete de Frango"
+                  />
+                  <h3>Baguete de Frango com Requeijão</h3>
+                </div>
+                <p>
+                  Deliciosa baguete de 15cm recheada com<br />frango e
+                  requeijão.
+                </p>
+                <span>R$ 13,00</span>
               </li>
               <li>
-                <h3>Baguete de Presunto de Queijo.</h3>
-                <span>
+                <div class="sandwich-title">
+                  <img
+                    src="./assets/images/sanduiche.jpg"
+                    alt="Baguete de Presunto e Queijo"
+                  />
+                  <h3>Baguete de Presunto de Queijo</h3>
+                </div>
+                <p>
                   Deliciosa baguete de 15cm recheada com<br />queijo mussarela e
                   presunto.
-                </span>
-                <p>R$ 10,00</p>
+                </p>
+                <span>R$ 10,00</span>
               </li>
               <li>
-                <h3>Coxinha</h3>
-                <span>
+                <div class="sandwich-title">
+                  <img
+                    src="./assets/images/coxinha.jpg"
+                    alt="Imagem de Coxinha"
+                  />
+                  <h3>Esfiha de Carne</h3>
+                </div>
+                <p>
+                  Deliciosa esfiha de 100g, de carne<br />temperada com limão.
+                </p>
+                <span>R$ 8,00</span>
+              </li>
+              <li>
+                <div class="sandwich-title">
+                  <img
+                    src="./assets/images/esfihadecarne.jpg"
+                    alt="Imagem de Esfiha de Carne"
+                  />
+                  <h3>Coxinha</h3>
+                </div>
+                <p>
                   Deliciosa coxinha de 100g, de frango com<br />catupiry
                   original.
-                </span>
-                <p>R$ 8,00</p>
+                </p>
+                <span>R$ 8,00</span>
               </li>
               <li>
-                <h3>Risole</h3>
-                <span
-                  >Delicioso risole de 100g, de presunto e<br />queijo.</span
-                >
-                <p>R$ 7,00</p>
+                <div class="sandwich-title">
+                  <img
+                    src="./assets/images/risole.png"
+                    alt="Imagem de Risole"
+                  />
+                  <h3>Risole</h3>
+                </div>
+                <p>Delicioso risole de 100g, de presunto e<br />queijo.</p>
+                <span>R$ 7,00</span>
               </li>
             </ul>
           </li>
           <li>
             <h2>Bolos & Tortas</h2>
-            <ul>
+            <ul class="candy-items">
               <li>
-                <h3>Bolo Red Velvet</h3>
-                <p>R$ 12,00</p>
-                <span>Fatia de bolo red velvet, 100g.</span>
+                <div class="cakes-title">
+                  <img
+                    src="./assets/images/red-velvet.jpg"
+                    alt="Imagem de Bolo Red Velvet"
+                  />
+                  <h3>Bolo Red Velvet</h3>
+                </div>
+                <p>Fatia de bolo red velvet, 100g.</p>
+                <span>R$ 13,00</span>
               </li>
               <li>
-                <h3>Bolo de Chocolate</h3>
-                <p>R$ 10,00</p>
-                <span>Fatia de bolo de chocolate, 100g.</span>
+                <div class="cakes-title">
+                  <img
+                    src="./assets/images/bolochocolate.jpg"
+                    alt="Imagem de Bolo de Chocolate"
+                  />
+                  <h3>Bolo de Chocolate</h3>
+                </div>
+                <p>Fatia de bolo de chocolate, 100g.</p>
+                <span>R$ 10,00</span>
               </li>
               <li>
-                <h3>Torta de Limão</h3>
-                <p>R$ 11,00</p>
-                <span>Fatia de torta de limão, 100g</span>
+                <div class="cakes-title">
+                  <img
+                    src="./assets/images/tortalimao.jpg"
+                    alt="Imagem de Torta de Limão"
+                  />
+                  <h3>Torta de Limão</h3>
+                </div>
+                <p>Fatia de torta de limão, 100g.</p>
+                <span>R$ 11,00</span>
               </li>
               <li>
-                <h3>Torta de Morango</h3>
-                <p>R$ 12,00</p>
-                <span>Fatia de torta de morango, 100g.</span>
+                <div class="cakes-title">
+                  <img
+                    src="./assets/images/tortamorango.jpg"
+                    alt="Imagem de Torta de Morango"
+                  />
+                  <h3>Torta de Morango</h3>
+                </div>
+                <p>Fatia de torta de morango, 100g.</p>
+                <span>R$ 12,00</span>
+              </li>
+              <li>
+                <div class="cakes-title">
+                  <img
+                    src="./assets/images/banoffee.jpeg"
+                    alt="Imagem de Torta Banoffee"
+                  />
+                  <h3>Torta Banoffee</h3>
+                </div>
+                <p>Fatia de torta banoffee, 100g.</p>
+                <span>R$ 12,00</span>
               </li>
             </ul>
           </li>

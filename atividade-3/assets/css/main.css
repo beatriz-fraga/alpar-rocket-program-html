@@ -1,3 +1,4 @@
+/*===== Reset =====*/
 * {
   padding: 0;
   margin: 0;
@@ -12,53 +13,7 @@ body {
   color: #fff;
 }
 
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-header,
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-}
-
-footer a {
-  font-weight: 400;
-  text-decoration: none;
-  color: #9ba0a6;
-  font-size: 12px;
-}
-
-footer h6 {
-  color: #9ba0a6;
-  font-weight: 400;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-button {
-  cursor: pointer;
-}
-
-h5 a {
-  font-weight: 400;
-  color: #fff;
-}
-
-h5 a:hover {
-  color: #00c39a;
-}
-
+/*===== All =====*/
 .container {
   display: flex;
   flex-direction: column;
@@ -68,12 +23,73 @@ h5 a:hover {
   background-color: #121418;
 }
 
+button {
+  cursor: pointer;
+}
+
+/*===== Header & Footer =====*/
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+/*===== Header =====*/
 .header-items {
   font-size: 14px;
   display: flex;
   gap: 30px;
 }
 
+
+.header-items a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-area a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-items a:hover {
+  border-bottom: 1px solid #00c39a;
+  color: #00c39a;
+}
+
+a.account {
+  color: #00c39a;
+}
+
+a.account:hover {
+  color: #fff;
+  border-bottom: 1px #fff solid;
+}
+
+/*===== Main =====*/
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/*===== Title Area =====*/
+.title h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.title p {
+  color: #9ba0a6;
+}
+
+/*===== Login Area =====*/
 .login-area {
   display: flex;
   gap: 80px;
@@ -93,6 +109,11 @@ h5 a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
 }
 
 #email,
@@ -193,36 +214,37 @@ h5 a:hover {
   color: #9ba0a6;
 }
 
-.detail {
-  display: flex;
-  align-items: center;
+/*===== Retrieve Area =====*/
+h5 a {
+  font-weight: 400;
+  color: #fff;
 }
 
-.title p {
+h5 a:hover {
+  color: #00c39a;
+}
+
+/*===== Footer Configurations ====*/
+footer a {
+  font-weight: 400;
+  text-decoration: none;
   color: #9ba0a6;
+  font-size: 12px;
 }
 
-.header-items a {
-  text-decoration: none;
-  color: #fff;
+footer h6 {
+  color: #9ba0a6;
+  font-weight: 400;
 }
 
-.logo-area a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
+/*=============================*/
 
-.header-items a:hover {
-  border-bottom: 1px solid #00c39a;
-  color: #00c39a;
-}
 
-a.account {
-  color: #00c39a;
-}
 
-a.account:hover {
-  color: #fff;
-  border-bottom: 1px #fff solid;
-}
+
+
+
+
+
+
+

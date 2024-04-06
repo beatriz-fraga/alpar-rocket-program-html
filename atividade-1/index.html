@@ -9,17 +9,25 @@
       href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/hearts-fill.svg"
+      type="image/x-icon"
+    />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
         font-family: "Madimi One", sans-serif;
-        background-color: pink;
-        padding: 0;
-        margin: 0;
+        background-color: #fd4d6b;
+        padding: 20px;
         color: #46091d;
       }
       img {
-        border-radius: 50%;
-        border: solid 5px black;
+        border: solid 3px #bb001f;
         width: 150px;
         transition: 0.3s;
       }
@@ -33,12 +41,16 @@
         transform: translateY(-5px);
       }
       .container {
-        border: 25px solid #964b64;
-        height: 92.1vh;
+        width: calc(100vw - 40px);
+        height: calc(100vh - 40px);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-image: url(./assets/imgs/coracao.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        gap: 2rem;
       }
       p {
         text-align: center;

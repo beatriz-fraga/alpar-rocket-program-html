@@ -1,0 +1,313 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-image: url(../images/tijolo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*======== Container ========*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*======== Header ========*/
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3rem;
+  background-color: #2c2727;
+}
+
+header input {
+  background-color: #9e9292;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+  outline: none;
+}
+
+header input::placeholder {
+  color: #000;
+}
+
+.search i {
+  display: inline-block;
+  transform: translateX(-2.5rem);
+}
+
+/*======== Logo ========*/
+.logo {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #ffa500;
+}
+
+.title {
+  width: 100%;
+  padding: 3rem 3rem 5rem 3rem;
+  text-align: center;
+  background-color: #2c2727;
+  color: #fff;
+}
+
+.title h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  position: relative;
+  bottom: -3rem;
+}
+
+.title h1 span {
+  color: #ffa500;
+  padding: 0 0.8rem;
+}
+
+/*======== Main =========*/
+/*===== Left & Right Aside ====*/
+main {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  gap: 5rem;
+  width: 120rem;
+  background-color: #fff;
+  padding: 5rem 5rem 1rem 5rem;
+}
+
+.left-aside {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  top: -13rem;
+}
+
+.left-aside img {
+  width: 22rem;
+  border: 0.3rem solid rgb(255, 165, 0);
+  margin-bottom: 1rem;
+}
+
+.aside-title h2 {
+  text-align: center;
+  font-family: "Sedgwick Ave Display", cursive;
+  margin-bottom: 2rem;
+}
+
+.aside-interactions {
+  display: flex;
+  gap: 1rem;
+}
+
+.aside-interactions button {
+  width: 12rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.follow-btn button,
+.share-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+.follow-btn button {
+  background-color: #e2704a;
+  color: #fff;
+}
+
+.share-btn button {
+  background-color: #ffa500;
+}
+
+.follow-btn button:hover {
+  background-color: #ffa500;
+  color: #000;
+}
+
+.share-btn button:hover {
+  background-color: #e2704a;
+  color: #fff;
+}
+
+.aside-informations {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.followers-area,
+.episodes-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-span {
+  font-family: "Play", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description-span {
+  font-size: 1.4rem;
+}
+
+.aside-app-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.left-aside p {
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.aside-app-btns button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 18rem;
+  padding: 1rem;
+  background-color: #000;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.store-btn span {
+  max-width: 8.9rem;
+}
+
+.apple-btn i,
+.store-btn i {
+  font-size: 3rem;
+}
+
+/*==== Right Aside ====*/
+.content-area {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem 3rem;
+  border: 0.1rem solid #ffa500;
+}
+
+/*==== Audios ====*/
+.audios-area {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  padding-right: 3rem;
+  max-height: 26rem;
+  overflow: auto;
+}
+
+/*===== Episódios =====*/
+.episode .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.episode {
+  margin-bottom: 3rem;
+}
+
+.episode p {
+  margin-bottom: 1rem;
+  font-family: "Play", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+}
+
+.episode button {
+  margin-left: 3rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.episode button img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+p.update-data {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 1rem;
+}
+
+/*==== Footer ====*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120rem;
+  padding: 3rem;
+  background-color: #2c2727;
+  font-family: "Play", sans-serif;
+}
+
+footer h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+.social-media a:hover {
+  color: #9e9292;
+}

@@ -1,17 +1,74 @@
+/*===== Reset =====*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
   }
-  
+
+/*==== All ====*/
   body {
     padding: 30px;
     background-color: #00c39a;
     font-family: "Poppins", sans-serif;
     color: #fff;
   }
+
+  button {
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 60px);
+    background-color: #121418;
+  }
+
+  /*===== Header & Footer =====*/
+  header,
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+
+  /*===== Header =====*/
+    .logo-area a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
   
+  .header-items {
+    font-size: 14px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .header-items a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .header-items a:hover {
+    border-bottom: 1px solid #00c39a;
+    color: #00c39a;
+  }
+  
+  a.account {
+    color: #00c39a;
+  }
+  
+  a.account:hover {
+    color: #fff;
+    border-bottom: 1px #fff solid;
+  }
+  
+  /*===== Main =====*/
   main {
     flex: 1;
     display: flex;
@@ -20,49 +77,38 @@
     align-items: center;
     gap: 50px;
   }
-  
-  header,
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  footer a {
-    font-weight: 400;
-    text-decoration: none;
-    color: #9ba0a6;
-    font-size: 12px;
-  }
-  
-  footer h6 {
-    color: #9ba0a6;
-    font-weight: 400;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  button {
-    cursor: pointer;
+
+  .content {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
   }
 
-  img {
+  /*====== Description Area =====*/
+  .description-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .description-area h1 {
+    text-align: center;
+  }
+
+  .description-area p {
+    text-align: center;
+  }
+
+  /*======= Img Area =======*/
+  .img-area img {
     width: 500px;
     border-radius: 10px;
   }
-  
-  h5 a {
-    font-weight: 400;
-    color: #fff;
-  }
-  
-  h5 a:hover {
-    color: #00c39a;
-  }
-  
+
+  /*===== Main Button ======*/
   #sender {
     cursor: pointer;
     background: linear-gradient(
@@ -86,11 +132,6 @@
     border: none;
   }
 
-  #sender i {
-    transition: 0.3s;
-  }
-
-  
   #sender:hover {
     background: linear-gradient(
       to right,
@@ -101,71 +142,33 @@
       #00c299
     );
   }
-  
+
+  #sender i {
+    transition: 0.3s;
+  }
+
   #sender:hover i {
       transform: translateX(10px);
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: calc(100vw - 60px);
-    height: calc(100vh - 60px);
-    background-color: #121418;
-  }
-
-  .content {
-    width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-
-  }
-
-  .header-items {
-    font-size: 14px;
-    display: flex;
-    gap: 30px;
-  }
-
-  .title p {
+  /*====== Footer Configurations =====*/
+  footer a {
+    font-weight: 400;
+    text-decoration: none;
     color: #9ba0a6;
+    font-size: 12px;
   }
   
-  .header-items a {
-    text-decoration: none;
-    color: #fff;
+  footer h6 {
+    color: #9ba0a6;
+    font-weight: 400;
   }
   
-  .logo-area a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-  }
-  
-  .header-items a:hover {
-    border-bottom: 1px solid #00c39a;
-    color: #00c39a;
-  }
-  
-  a.account {
-    color: #00c39a;
-  }
-  
-  a.account:hover {
-    color: #fff;
-    border-bottom: 1px #fff solid;
-  }
-  
-  .description-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
+ /*==================================*/
 
-  .description-area p {
-    text-align: center;
-  }
+ 
+
+ 
+
+  
+ 

@@ -3,25 +3,22 @@
   padding: 0;
   font-family: "Madimi One", sans-serif;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
   background-color: #ccbcdc;
 }
 
-table,
-th,
-td {
-  border: 4px solid #000;
+/*===== Header =====*/
+header {
+  padding: 25px;
+  margin-inline: 30px;
+  border: 5px solid #000;
   background-color: #695971;
 }
 
-table {
-    margin: 50px;
-  width: 500px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
+/*===== Title Área =====*/
 .home {
   background-color: #000;
   color: #fff;
@@ -31,16 +28,15 @@ table {
   flex-direction: column;
 }
 
-header {
-  padding: 25px;
-  margin-inline: 30px;
-  border: 5px solid #000;
-  background-color: #695971;
-}
-
-h1 {
+.home h1 {
   padding: 30px;
   text-align: center;
+}
+
+.home img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
 .home h2 {
@@ -48,35 +44,11 @@ h1 {
   margin-bottom: 30px;
 }
 
-ul {
-  list-style: none;
-}
-
-ol {
-  display: flex;
-  justify-content: space-around;
-  border: 5px solid #000;
-  padding: 30px 20px;
-}
-
-img {
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-}
-
-ol li {
-    margin-bottom: 20px;
-}
-
-ol h2 {
-    padding-bottom: 30px;
-}
-
-.main-p {
+.home-p {
   padding: 0 50px 30px 50px;
 }
 
+/*===== Menu =====*/
 .menu {
   padding-inline: 30px;
 }
@@ -90,6 +62,89 @@ ol h2 {
   background-color: #695971;
 }
 
+.menu ol {
+  display: flex;
+  border: 5px solid #000;
+  padding: 30px 50px;
+}
+
+.menu ul {
+  padding: 30px 40px 30px 40px;
+  min-height: 980px;
+}
+
+.menu ol > li {
+  flex: 1;
+}
+
+.menu ol h2 {
+  text-align: center;
+}
+
+.menu ol li {
+  margin-bottom: 20px;
+}
+
+.menu ol h2 {
+  padding-bottom: 30px;
+}
+
+.coffee-items {
+  border: 5px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.food-items {
+  border: 5px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.candy-items {
+  border: 5px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.coffee-items span,
+.food-items span,
+.candy-items span {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.menu img {
+  width: 100px;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
+
+.coffee-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.sandwich-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.cakes-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/*===== Informations Área =====*/
 .menu-informations {
   background-color: #000;
   display: flex;
@@ -97,9 +152,23 @@ ol h2 {
   margin-inline: 30px;
 }
 
+.menu-informations table {
+  margin: 50px;
+  width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-informations table,
+.menu-informations th,
+.menu-informations td {
+  border: 4px solid #000;
+  background-color: #695971;
+}
+
+/*===== Footer Área =====*/
 footer {
   padding: 10px;
-  background-color:#695971;
+  background-color: #695971;
   margin-inline: 30px;
   display: flex;
   justify-content: space-around;
@@ -109,9 +178,11 @@ footer {
 
 footer ul {
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 
 footer ul li a {
   color: #000;
 }
+
+/*=======================*/

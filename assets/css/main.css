@@ -1,0 +1,141 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poiret One", sans-serif;
+  background-image: linear-gradient(
+    135deg,
+    #ded3d9,
+    #d7d2dd,
+    #d3d3e1,
+    #cfd2e2,
+    #d5d3df,
+    #e0d4d7,
+    #e6d4d3,
+    #eed4ce,
+    #f6d5c8,
+    #fad9cb,
+    #fbded1,
+    #fce7dd,
+    #fdeae1
+  );
+  height: 100vh;
+}
+
+a {
+  color: #000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.logo {
+  margin-top: 0.5rem;
+  font-family: "Licorice", sans-serif;
+  font-size: 3rem;
+  transform: rotate(-10deg);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+main h1 {
+  font-family: "Courgette", sans-serif;
+  font-size: 3rem;
+  line-height: 5rem;
+  text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+main h1 i {
+  transition: all 0.3s;
+  transform: translateY(0rem);
+  display: inline-block;
+  cursor: pointer;
+}
+
+main h1:hover i {
+  transform: translateY(-0.5rem);
+}
+
+main p {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.content-area {
+  max-width: 500px;
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.activities a {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.activities a:hover {
+  color: #a344a0;
+}
+
+.img-area img {
+  width: 50rem;
+  border-radius: 2rem;
+  border: 0.5rem solid #fffafa;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  padding: 0 6rem 0.5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+}
+
+.github-btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.github-btn a {
+  font-weight: bold;
+}
