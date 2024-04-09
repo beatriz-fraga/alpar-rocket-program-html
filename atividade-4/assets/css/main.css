@@ -89,7 +89,8 @@ main {
   display: grid;
   grid-template-columns: 22rem 1fr;
   gap: 5rem;
-  width: 120rem;
+  width: 100%;
+  max-width: 120rem;
   background-color: #fff;
   padding: 5rem 5rem 1rem 5rem;
 }
@@ -222,14 +223,24 @@ main {
   gap: 5rem;
   padding: 5rem 3rem;
   border: 0.1rem solid #ffa500;
+  margin-bottom: 5rem;
 }
 
+.video-area {
+  display: flex;
+  align-items: center;
+}
+.video-area video {
+  width: 100%;
+  max-width: 320px;
+}
 /*==== Audios ====*/
 .audios-area {
   display: flex;
   flex-direction: column-reverse;
   flex: 1;
   padding-right: 3rem;
+  height: 100%;
   max-height: 26rem;
   overflow: auto;
 }
@@ -282,7 +293,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 120rem;
+  width: 100%;
+  max-width: 120rem;
   padding: 3rem;
   background-color: #2c2727;
   font-family: "Play", sans-serif;
@@ -310,4 +322,97 @@ footer h6 {
 
 .social-media a:hover {
   color: #9e9292;
+}
+
+@media (max-width: 1180px) {
+  main {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+  }
+  .title h1 {
+    position: static;
+  }
+  .left-aside {
+    position: static;
+  }
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    max-width: 382px;
+  }
+  .audios-area {
+    flex: unset;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .episode .row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 950px) {
+  main {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 770px) {
+  main {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .content-area {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  footer ul {
+    flex-direction: column;
+  }
+  .title h1 {
+    font-size: 16px;
+  }
+  .title {
+    padding: 3rem 1rem 5rem 1rem;
+  }
+  
+}
+@media(max-width: 495px) {
+.content-area {
+  padding: 10px;
+}
+}
+
+@media(max-width: 465px) {
+  header input {
+    max-width: 100px;
+  }
+  .title h1 {
+    font-size: 14px;
+    margin: 0 auto;
+    text-wrap: wrap;
+  }
+  .audios-area {
+    margin: 0 ;
+  }
+  footer h6 {
+    font-size: 12px;
+  }
+  footer ul li span {
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 370px) {
+  .logo {
+    font-size: 20px;
+  }
+  .title h1 {
+    font-size: 9.5px;
+  }
+  header {
+    align-items: center;
+  }
 }

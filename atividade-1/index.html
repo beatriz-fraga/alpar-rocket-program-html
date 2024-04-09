@@ -25,6 +25,9 @@
         background-color: #fd4d6b;
         padding: 20px;
         color: #46091d;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
       img {
         border: solid 3px #bb001f;
@@ -41,19 +44,43 @@
         transform: translateY(-5px);
       }
       .container {
-        width: calc(100vw - 40px);
-        height: calc(100vh - 40px);
+        flex: 1;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px;
         background-image: url(./assets/imgs/coracao.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        gap: 2rem;
+        gap: 30px;
       }
       p {
+        text-align: justify;
+      }
+      p span {
+        display: block;
         text-align: center;
+      }
+      @media (max-width: 540px) {
+        h3 {
+          text-align: center;
+          font-size: 1.2rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .container {
+          width: 100%;
+          height: auto;
+        }
+        h1 {
+          margin-top: 50px;
+        }
+        p {
+          margin-bottom: 50px;
+        }
       }
     </style>
     <title>Sobre - Mim</title>
@@ -65,9 +92,9 @@
       <h2>Beatriz Martins Fraga</h2>
       <h3>Análise de Desenvolvimento de Sistemas - USCS</h3>
       <p>
-        Olá, prazer em conhecer!<br />
-        Estou estudando para ser front-end. Meu foco é em Html, Css e Js.<br />
-        Atualmente faço parte do programa de capacitação da Alpar.<br />
+        <span>Olá, prazer em conhecer!</span><br />
+        Tenho 24 anos, e estou estudando para ser front-end. Meu foco é em Html,
+        Css e Js. Atualmente faço parte do programa de capacitação da Alpar.<br />
         Eu amo café de cápsula e Cup Noodles.
       </p>
     </main>
