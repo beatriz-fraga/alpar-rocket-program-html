@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(
+    160deg,
+    #ffcece,
+    #f8a8a8,
+    #f58585,
+    #fa7474,
+    #fd7171,
+    #f16565,
+    #f85c5c,
+    #ff5454,
+    #ff3f3f,
+    #ff2727,
+    #ff1414,
+    #d30b0b
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #4169e1;
+  padding: 0 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 60px;
+}
+
+header a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 120px;
+}
+
+main {
+  width: 90%;
+  max-width: 1250px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f8ff;
+  padding: 30px;
+  border: 5px solid #2549b6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.pokedex-title {
+  width: 100%;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #2549b6;
+  border-bottom: 1px solid #000;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  min-height: 35rem;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding: 24px 0 24px 16px;
+  background-color: #4169e1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/pokeball-back.png);
+  background-size: 60%;
+  background-position: 120px 50%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.card .texts {
+  z-index: 1;
+}
+
+.card .number {
+  color: #000;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.card h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  object-fit: contain;
+  object-position: left center;
+  z-index: 1;
+}
+
+.card p {
+  font-size: 12px;
+  max-width: 200px;
+}
+
+.card .texts .tags {
+  display: flex;
+  gap: 6px;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
+.tag {
+  display: block;
+  text-align: center;
+  min-width: 60px;
+  background-color: #bd9090;
+  padding: 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/*===== Card Types =====*/
+.card.grass {
+  background-color: #4bd0ae;
+  color: #fff;
+}
+.card.fire {
+  background-color: #f05267;
+  color: #fff;
+}
+.card.water {
+  background-color: #44bbe1;
+  color: #fff;
+}
+.card.normal {
+  background-color: #9b5116;
+  color: #fff;
+}
+.card.electric {
+  background-color: #dada00;
+  color: #fff;
+}
+.card.bug {
+  background-color: #2abd17;
+  color: #fff;
+}
+.card.ice {
+  background-color: #0000ff;
+  color: #fff;
+}
+.card.steel {
+  background-color: #666565;
+  color: #fff;
+}
+.card.poison {
+  background-color: #800080;
+  color: #fff;
+}
+.card.ground {
+  background-color: #deb887;
+  color: #fff;
+}
+.card.flying {
+  background-color: #9aa8ff;
+  color: #fff;
+}
+.card.psychic {
+  background-color: #dd8add;
+  color: #fff;
+}
+.card.rock {
+  background-color: #a89048;
+  color: #fff;
+}
+.card.fairy {
+  background-color: #e99daa;
+  color: #fff;
+}
+.card.dragon {
+  background-color: #da1939;
+  color: #fff;
+}
+.card.ghost {
+  background-color: #c902ae;
+  color: #fff;
+}
+.card.fighting {
+  background-color: #ff4500;
+  color: #fff;
+}
+.card.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/*===== Card Tags =====*/
+.tag.grass {
+  background-color: #55ac4a;
+  color: #fff;
+}
+.tag.fire {
+  background-color: #fe8538;
+  color: #fff;
+}
+.tag.water {
+  background-color: #3774d6;
+  color: #fff;
+}
+.tag.normal {
+  background-color: #ffc0cb;
+  color: #000;
+}
+.tag.electric {
+  background-color: #e41010;
+  color: #fff;
+}
+.tag.bug {
+  background-color: #026602;
+  color: #fff;
+}
+.tag.ice {
+  background-color: #53cece;
+  color: #000;
+}
+.tag.steel {
+  background-color: #000;
+  color: #fff;
+}
+.tag.poison {
+  background-color: #a16da7;
+  color: #fff;
+}
+.tag.ground {
+  background-color: #9b5116;
+  color: #fff;
+}
+.tag.flying {
+  background-color: #f5f562;
+  color: #000;
+}
+.tag.psychic {
+  background-color: #800080;
+  color: #fff;
+}
+.tag.rock {
+  background-color: #644d2f;
+}
+.tag.fairy {
+  background-color: #dc143c;
+  color: #fff;
+}
+.tag.dragon {
+  background-color: #0d970d;
+}
+.tag.ghost {
+  background-color: #663399;
+}
+.tag.fighting {
+  background-color: #0909cf;
+  color: #fff;
+}
+.tag.dark {
+  background-color: #808080;
+  color: #fff;
+}
+
+footer {
+    color: #fff;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:  
+    linear-gradient(45deg, rgb(110, 166, 217, 0.7),  rgb(110, 166, 217, 0.7)), url(../images/sol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Merriweather", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #ccc9c9;
+  border: 2px solid #000;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 25px;
+}
+
+.search-area {
+  display: flex;
+  gap: 10px;
+}
+.search-area input {
+  outline: none;
+  border: 0.5px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-area button {
+ cursor: pointer;
+ width: 40px;
+ border-radius: 5px;
+ outline: none;
+}
+
+.search-area button:hover {
+  background-color: rgba(0, 125, 255, 0.7);
+}
