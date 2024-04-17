@@ -3,31 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/chip.png"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <title>Wheather Report - Climate</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Banco POO</title>
   </head>
   <body>
     <div class="container">
-      <main>
-        <h1 class="title">Clima Mundial</h1>
-        <div class="search-area">
-          <input type="text" placeholder="Escolha um país" id="country" />
-          <button>
-            <i class="ri-search-line"></i>
-          </button>
+      <header>
+        <div class="logo">
+          <a href="#">ooPBank</a>
+          <i class="ri-coins-fill"></i>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Minha Conta</a></li>
+          <li><a href="./index.html">Transações</a></li>
+        </ul>
+      </header>
+      <main id="box-content">
+        <h3 class="card-bank">ooPBank</h3>
+        <div class="text-area">
+          <h1>Insira o valor para depositar ou sacar</h1>
+          <div class="input-area">
+            <img
+              src="./assets/images/chip-removebg-preview.png"
+              alt="Chip de Cartão"
+            />
+            <input type="text" id="money-value" required />
+          </div>
+        </div>
+        <div class="account-area">
+          <h2>0105 0205 2707 0108</h2>
+          <span>Validade: 12/28</span>
+        </div>
+        <div class="action-area">
+          <button type="button" id="money-deposit">Depositar</button>
+          <button type="button" id="money-withdraw">Sacar</button>
+        </div>
+        <div id="res"></div>
+        <div class="card-footer">
+          <img
+            src="./assets/images/Mastercard-Logo.png"
+            alt="Mastercard-Logo"
+          />
         </div>
       </main>
     </div>
+    <script src="./assets/js/ContaBancaria.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
