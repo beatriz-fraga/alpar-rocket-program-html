@@ -87,21 +87,3 @@ ControleIluminacao.instance.addEventListener(() => {
 onOffBtn.addEventListener("click", () => {
   ControleIluminacao.instance.toggle("todos");
 });
-
-ControleIluminacao.instance.addEventListener(() => {
-  if (ControleIluminacao.instance.todos) {
-    roomResult.classList.add("active");
-    kitchenResult.classList.add("active");
-    bathroomResult.classList.add("active");
-    bedroomResult.classList.add("active");
-    balconyResult.classList.add("active");
-    laundryResult.classList.add("active");
-  } else {
-    roomResult.classList.remove("active");
-    kitchenResult.classList.remove("active");
-    bathroomResult.classList.remove("active");
-    bedroomResult.classList.remove("active");
-    balconyResult.classList.remove("active");
-    laundryResult.classList.remove("active");
-  }
-});

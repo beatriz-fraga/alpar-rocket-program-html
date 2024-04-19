@@ -38,6 +38,12 @@ class ControleIluminacao {
 
       case "todos":
         this.todos = !this.todos;
+        this.sala = this.todos;
+        this.cozinha = this.todos;
+        this.banheiro = this.todos;
+        this.quarto = this.todos;
+        this.varanda = this.todos;
+        this.lavanderia = this.todos;
         break;
     }
     this.execute();
