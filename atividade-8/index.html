@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/sun-foggy-fill.svg"
+      type="image/x-icon"
+    />
+    <title>Weather Report - Climate</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h1 class="title">Weather Report</h1>
+        <div class="search-area">
+          <input type="text" placeholder="Digite uma cidade" id="city" />
+          <button id="search-btn">
+            <i class="ri-search-line"></i>
+          </button>
+        </div>
+        <div class="weather-response">
+          <h1 class="city-title"></h1>
+          <span class="sky-info"></span>
+          <img src="" alt="Ícone de Temperatura" class="temperature-icon" />
+          <h2 class="current-temperature"></h2>
+          <h3 class="min-temperature"></h3>
+          <h3 class="max-temperature"></h3>
+        </div>
+      </main>
+      <footer>
+        <h4>@Beatriz Fraga - 2024</h4>
+      </footer>
+    </div>
+    <script src="./assets/js/WeatherModel.js"></script>
+    <script src="./assets/js/WeatherView.js"></script>
+    <script src="./assets/js/WeatherService.js"></script>
+    <script src="./assets/js/WeatherControler.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
