@@ -84,3 +84,9 @@ footer {
   position: fixed;
   bottom: 50px;
 }
+
+@media(max-width: 365px) {
+ main {
+  margin-bottom: 20px;
+ }
+ }
