@@ -25,6 +25,20 @@ body {
   min-height: 100vh;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff6347;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  text-decoration: none;
+  color: #000;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -77,6 +91,7 @@ main {
 
 #onoff {
     background-color: black;
+    grid-column: 2;
 }
 
 
@@ -106,3 +121,32 @@ main {
 }
 
 
+@media (max-width: 850px) {
+  .button-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 435px) {
+  .button-area {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+  }
+  .house-areas {
+    grid-template-columns: 1fr 1fr;
+  }
+  #onoff {
+    grid-column: 1;
+}
+}
+
+@media (max-width: 300px) {
+  .button-area {
+    grid-template-columns: 1fr;
+  }
+  .house-areas {
+    grid-template-columns: 1fr;
+  }
+}
